@@ -1,0 +1,104 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    boolean infiniteloop = true;
+    while (infiniteloop == true) {
+      Scanner Pid = new Scanner(System.in);
+      System.out.println("Patient ID number (6 digit number):");
+      String ID = Pid.nextLine();
+      
+    Scanner Pname = new Scanner(System.in);  
+    System.out.println("Patient's name:");
+    String Name = Pname.nextLine();  
+
+    Scanner Page = new Scanner(System.in);
+    System.out.println("Patient's age:");
+    String Age = Page.nextLine();
+
+    Scanner Pdob = new Scanner(System.in);
+    System.out.println("Patient's date of birth (MM/DD/YYYY) ");
+    String dob = Pdob.nextLine();
+
+    Scanner Pgender = new Scanner(System.in);
+    System.out.println("Patient's gender:");
+    String gender = Pgender.nextLine();
+
+    Scanner Prace = new Scanner(System.in);
+    System.out.println("Patient's race:");
+    String race = Prace.nextLine();
+
+    Scanner Pethnicorigin = new Scanner(System.in);
+    System.out.println("Patient's ethnic origin:");
+    String ethnicorigin = Pethnicorigin.nextLine();
+
+      Scanner Preason = new Scanner(System.in);
+      System.out.println("Reason of patient's visit:");
+      String reason = Preason.nextLine();
+      
+      Scanner Paddress = new Scanner(System.in);
+    System.out.println("Patient's address:");
+    String address = Paddress.nextLine();
+
+      Scanner Pdoctor = new Scanner(System.in);
+      System.out.println("Patient's doctor:");
+      String doctor = Pdoctor.nextLine();
+
+    Scanner Pemploymentstatus = new Scanner(System.in);
+    System.out.println("Patient's employment status:");
+    String employmentstatus = Pemploymentstatus.nextLine();
+
+    Scanner Phealthinsurance = new Scanner(System.in);
+    System.out.println("Patient's health insurance provider:");
+    String healthinsurance = Phealthinsurance.nextLine();
+
+    Scanner Psmokeordrink = new Scanner(System.in);
+    System.out.println("Does the patient smoke and/or drink?:");
+    String smokeordrink = Psmokeordrink.nextLine();
+
+    Scanner Pexercise = new Scanner(System.in);
+    System.out.println("How often does the patient exercise?:");
+    String exercise = Pexercise.nextLine();
+
+    Scanner Pgeneticrisks = new Scanner(System.in);
+    System.out.println("Does the patient have family members with a disease that could be passed on genetically?:");
+    String geneticrisks = Pgeneticrisks.nextLine();
+
+    Scanner Pallergies = new Scanner(System.in);
+    System.out.println("Patient's allergies (if no allergies, type N/A)");
+    String allergies = Pallergies.nextLine();
+
+    Scanner Pcurrenthealth = new Scanner(System.in);
+    System.out.println("Patient's current health issues:");
+    String currenthealth = Pcurrenthealth.nextLine();
+
+    Scanner Pmeds = new Scanner(System.in);
+    System.out.println("Medications the patient is currently taking:");
+    String meds = Pmeds.nextLine();
+      System.out.println(" ");
+      System.out.println("Review Patient information:");
+      System.out.println(" ");
+      System.out.println(" ");
+      System.out.println(ID);
+      System.out.println(Name);
+      System.out.println(Age);
+      System.out.println(dob);
+      System.out.println(gender);
+      System.out.println(race);
+      System.out.println(ethnicorigin);
+      System.out.println(address);
+      System.out.println(employmentstatus);
+      System.out.println(healthinsurance);
+      System.out.println(smokeordrink);
+      System.out.println(exercise);
+      System.out.println(geneticrisks);
+      System.out.println(currenthealth);
+      System.out.println(allergies);
+      System.out.println(meds);
+      System.out.println(" ");
+      Scanner correct = new Scanner(System.in);
+      System.out.println("To save this information, type in CONFIRM and begin placing in the next patient's information.");
+      String correcto = correct.nextLine();
+      }  
+  }
+}
